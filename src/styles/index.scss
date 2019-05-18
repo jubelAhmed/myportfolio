@@ -1,4 +1,7 @@
-.masthead {
+html {
+  scroll-behavior: smooth;
+}
+.profile-header {
     min-height: 45rem;
      font-family: 'Raleway', sans-serif;
     position: relative;
@@ -25,9 +28,37 @@
   
   #topheader{
     nav{
-      background:#05262C;
+      background:black;
+      border-bottom: 5px solid #04C2C9;
+
+       @keyframes FadeIn {
+            0% {
+                opacity: 0;
+                -webkit-transition-duration: 0.8s;
+                transition-duration: 0.8s;
+                -webkit-transform: translateY(-10px);
+                -ms-transform: translateY(-10px);
+                transform: translateY(-10px);
+            }
+
+
+            100% {
+                opacity: 1;
+                -webkit-transform: translateY(0);
+                -ms-transform: translateY(0);
+                transform: translateY(0);
+                pointer-events: auto;
+                transition: cubic-bezier(0.4, 0, 0.2, 1);
+            }
+        }
+
+       .animate-navitem {
+            animation: FadeIn .2s cubic-bezier(0.65, 0.05, 0.36, 1);
+            animation-fill-mode: both;
+        }
       .navbar-nav{
         margin-left:24%;
+        margin-right:24%;
       }
       .nav-item{
         margin-left:30px;
@@ -37,12 +68,53 @@
       .active, .nav-link:hover {
    
         color:darkorange;
-    
-    }
+        border-bottom: 2px solid orange;
+       
+       }
+      
       
     }
   }
 
   
-  
-  
+#about{
+  width: 100%;
+  background: #FFFFFF;
+  height: 790px;
+
+  .about-image{
+    height: 300px;
+    width:300px;
+  }
+
+}  
+
+.header-section{
+  text-align:center;
+  padding-bottom: 30px;
+  h1{
+    color:blue;
+    
+    
+  }
+}
+
+section {
+  width: 100%;
+  padding-top: 100px;
+  background: rgb(182, 174, 174);
+  border-bottom: 1px solid #ccc;
+  height: 500px;
+    
+}
+#contact{
+  height: 1500px;
+}
+section:nth-child(even) {
+  background: #ecf0f1;
+}
+section:nth-child(odd) {
+  background: #bdc3c7;
+}
+
+

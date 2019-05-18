@@ -20,25 +20,27 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 
       <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+      <script class="cssdeck" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
    
   </head>
   <body>
 
 
 
-    <header class="masthead d-flex" id="home">
-      <div class="container text-center my-auto">
+    <header class="profile-header d-flex" id="home">
+      <div class="container text-center my-auto" onloadstart="onLeft(this)">
         <h1 class="mb-1 " style="color:white">Hello, I'm <span
-            style="color:darkorange">Jubel Ahmed.</span> </h1>
+            style="color:darkorange;" >Jubel Ahmed.</span> </h1>
         <h2 class="m-2 tracking-in-expand" style="color:deepskyblue"> I'm a full-stack web
           developer.</h2>
-        <a style="font-size:1.5rem" class="btn btn-outline-light btn-xl p-2 m-3
-          js-scroll-trigger" href="#topheader"> View My Work <i class="fa
+        <a style="font-size:1.5rem" class="btn btn-outline-light btn-xl py-2 px-3 m-3
+          js-scroll-trigger" href="#about"> View My Work <i class="fa
             fa-arrow-right"></i> </a>
       </div>
       
     </header>
-    <div id="topheader" class="sticky-top">
+    <div id="topheader" class="sticky-top ">
       <nav class="navbar navbar-expand-lg navbar-dark">
         <!-- <a class="navbar-brand" href="#">Navbar</a> -->
         <button class="navbar-toggler" type="button" data-toggle="collapse"
@@ -48,23 +50,62 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav" id="navID">
-            <a class="nav-item nav-link active" href="#">Home <span
+            <a class="nav-item nav-link active" href="#home">Home <span
                 class="sr-only">(current)</span></a>
-            <a class="nav-item nav-link" href="#">About</a>
-            <a class="nav-item nav-link" href="#">Skills</a>
-            <a class="nav-item nav-link" href="#">Education</a>
-            <a class="nav-item nav-link" href="#">Portfolio</a>
-            <a class="nav-item nav-link disabled" href="#">Blog</a>
-            <a class="nav-item nav-link disabled" href="#">Contact</a>
+            <a class="nav-item nav-link" href="#about">About</a>
+            <a class="nav-item nav-link" href="#skills">Skills</a>
+            <a class="nav-item nav-link" href="#education">Education</a>
+            <a class="nav-item nav-link" href="#portfolio">Portfolio</a>
+            <a class="nav-item nav-link " href="#blog">Blog</a>
+            <a class="nav-item nav-link " href="#contact">Contact</a>
           </div>
         </div>
       </nav>
     </div>
 
-    <section >
-      
-    </section>
+    <main>
+      <section id="about"> 
 
+              <center>
+                
+              <div class="header-section">
+                  <h1 class="">ABOUT</h1>
+                </div>
+              </center>
+
+             <div class="row">
+               <div class="com-md-6 col-sm-6 bg-info">
+
+               </div>
+               <div class="com-md-6 col-sm-6 bg-danger">
+                  col
+               </div>
+
+            
+          </div>
+      </section>
+      <section id="skills">
+      skills
+      </section>
+      <section id="education">
+      education
+      </section>
+      <section id="portfolio">
+      portfolio
+      </section>
+      <section id="blog">
+      blog
+      </section>
+      <section id="contact">
+      contact
+
+      lorem300
+      </section>
+      
+    </main>
+    <footer>
+      all socila link
+    </footer>
 
     <script src="./dist/bundle.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -78,6 +119,8 @@
       src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"></script>
+
+     
 
       
 
